@@ -3,7 +3,7 @@ import Data.Char
 rem_upper l = map (\s -> map toLower s) l
 
 longer :: Int -> [String] -> [String]
-longer x l = filter (\s -> length s < x) l
+longer x = filter (\s -> length s < x) 
 
 howMany l = foldr (\x accum -> if length x > 12 then (accum + 1) else accum) 0 l
 
